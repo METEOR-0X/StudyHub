@@ -92,6 +92,36 @@ h1, p {
     margin-top: 90px;
 }
 
+.social-icons {
+    position: fixed;
+    bottom: 20px; /* المسافة من أسفل الصفحة */
+    left: 20px; /* المسافة من الجانب الأيسر */
+    display: flex;
+    flex-direction: column; /* ترتيب الأيقونات عموديًا */
+    gap: 10px; /* المسافة بين الأيقونات */
+}
+
+.social-icons a {
+    color: #0c1c4f; /* اللون الأساسي للأيقونة */
+    font-size: 30px; /* حجم الأيقونات */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #f54c4c; /* تغيير اللون عند التمرير على الأيقونة */
+}
+
+/* تأثير التكبير عند التمرير على الأيقونة */
+.social-icons a i {
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover i {
+    transform: scale(1.2); /* تكبير الأيقونة عند التمرير */
+}
+
+
 @media screen and (max-width: 425px) and (min-width: 320px) {
     .contener {
         height: 7%; 
