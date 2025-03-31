@@ -94,7 +94,7 @@ h1, p {
 
 @media screen and (max-width: 425px) and (min-width: 320px) {
     .contener {
-        height: 7%; 
+        height: auto; 
     }
 
     nav {
